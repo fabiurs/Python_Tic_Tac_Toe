@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadData()">
+    <div class="wrapper">
+
+        <div class="title">
+            <h1>Tic Tac Toe</h1>
+        </div>
+
+        <div class="score">
+            <p>You: <span id="playerScore"></span></p>
+            <p>Computer: <span id="computerScore"></span></p>
+        </div>
+
+        <div class="board" id="brd">
+            <div class="patrat" onclick="addCharacter(0)">
+                <p></p>
+            </div>
+            <div class="patrat" onclick="addCharacter(1)">
+                <p></p>
+            </div>
+            <div class="patrat" onclick="addCharacter(2)">
+                <p></p>
+            </div>
+            <div class="patrat" onclick="addCharacter(3)">
+                <p></p>
+            </div>
+            <div class="patrat" onclick="addCharacter(4)">
+                <p></p>
+            </div>
+            <div class="patrat" onclick="addCharacter(5)">
+                <p></p>
+            </div>
+            <div class="patrat" onclick="addCharacter(6)">
+                <p></p>
+            </div>
+            <div class="patrat" onclick="addCharacter(7)">
+                <p></p>
+            </div>
+            <div class="patrat" onclick="addCharacter(8)">
+                <p></p>
+            </div>
+        </div>
+        <div class="c-mesaj">
+            <span id="mesaj"></span>
+        </div>
+        <div class="c-btn">
+            <div class="btn" id="playbtn" onclick="playGame()">
+                <p id="playText">Play</p>
+            </div>
+
+            <div class="btn" id="resetbtn" onclick="resetGame()">
+                <p>Reset Game</p>
+            </div>
+        </div>
+
+        <div style="text-align: center;" class="desc-text">
+            <p>Acesta este un joc clasic de X si O.
+                <br>
+                <br>
+                Scorul va fi salvat pe dispozitivul tau pentru a putea fi incarcat de fiecare data cand vei reveni.
+            </p>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
